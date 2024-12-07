@@ -7,3 +7,8 @@ output "resource_group_nw_01_id" {
   description = "Resource group ID"
   value       = module.resource_group_nw_01.resource_group_id
 }
+
+output "resource_group_nw_01_location" {
+  description = "Resource group location"
+  value       = module.resource_group_nw_01.resource_group_location
+}
