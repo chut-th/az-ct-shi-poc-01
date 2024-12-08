@@ -1,17 +1,17 @@
 terraform {
-  required_version = "1.10.0"
+  required_version = "1.10.1"
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "4.12.0"
+      version = "4.13.0"
     }
   }
-  backend "azurerm" {
-    resource_group_name  = "azrgcttfpoc01"
-    storage_account_name = "azstacttfpoc01"
-    container_name       = "tfstate"
-    key                  = "poc-databricks/vnet.tfstate"
-  }
+  # backend "azurerm" {
+  #   resource_group_name  = "azrgcttfpoc01"
+  #   storage_account_name = "azstacttfpoc01"
+  #   container_name       = "tfstate"
+  #   key                  = "poc-databricks/vnet.tfstate"
+  # }
 }
 
 provider "azurerm" {
