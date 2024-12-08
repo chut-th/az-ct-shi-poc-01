@@ -10,7 +10,7 @@ terraform {
     resource_group_name  = "azrgcttfpoc01"
     storage_account_name = "azstacttfpoc01"
     container_name       = "tfstate"
-    key                  = "poc-databricks/vnet.tfstate"
+    key                  = "poc-databricks/subnet.tfstate"
   }
 }
 
