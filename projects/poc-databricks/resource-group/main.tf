@@ -15,3 +15,12 @@ module "resource_group_sta_01" {
   project        = "shista"
   running_number = "01"
 }
+
+module "resource_group_dp_01" {
+  source         = "github.com/chut-th/terraform-azurerm-resource-group"
+  company        = "ct"
+  environment    = "poc"
+  location       = "southeastasia"
+  project        = "shidp"
+  running_number = "01"
+}
